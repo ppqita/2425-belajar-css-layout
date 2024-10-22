@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Align Content</title>
+        <style>
+            .container {
+                background-color: purple;
+                padding: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                height: 1000px;
+                /* align-content: flex-end; */
+                /* align-content: flex-start; */
+                /* align-content: stretch; */
+                /* align-content: center; */
+                /* align-content: space-between; */
+                /* align-content: space-around; */
+                align-content: space-evenly;
+            }
+
+            .content {
+                background-color: orange;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+                width: 150px;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <h3>Content 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="content">
+                <h3>Content 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="content">
+                <h3>Content 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="content">
+                <h3>Content 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="content">
+                <h3>Content 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+        </div>
+    </body>
+</html>

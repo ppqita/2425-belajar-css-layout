@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Align Items</title>
+        <style>
+            .container {
+                background-color: purple;
+                padding: 5px;
+                border-radius: 8px;
+                display: flex;
+                height: 500px;
+                /* align-items: end; */
+                /* align-items: start; */
+                align-items: center;
+                /* align-items: baseline; */
+                /* align-items: stretch; */
+            }
+
+            .content {
+                background-color: orange;
+                margin: 10px;
+                padding: 10px;
+                height: auto;
+                width: 200px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <h3>Content 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="content">
+                <h3>Content 2</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Enim aut debitis, voluptates ad dignissimos aliquam neque,
+                    praesentium, quidem similique ipsam consectetur hic sit.
+                    Laboriosam magni nisi recusandae in alias esse?
+                </p>
+            </div>
+            <div class="content">
+                <h3>Content 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="content">
+                <h3>Content 4</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </body>
+</html>

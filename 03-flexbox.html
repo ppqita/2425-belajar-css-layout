@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flexbox</title>
+        <style>
+            /* wadah item */
+            .flex-container {
+                display: flex;
+                background-color: burlywood;
+                /* flex-direction: row-reverse; */
+                /* flex-direction: column; */
+                /* flex-direction: column-reverse; */
+                flex-wrap: wrap;
+            }
+
+            /* item */
+            .flex-item {
+                background-color: aqua;
+                border: 2px solid blue;
+                margin: 10px;
+                width: 200px;
+                padding: 10px;
+            }
+
+            .dua {
+                order: 1;
+            }
+
+            .satu {
+                order: 3;
+            }
+
+            .tiga {
+                order: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item satu">
+                <h3>Ini konten 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="flex-item dua">
+                <h3>Ini konten 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="flex-item tiga">
+                <h3>Ini konten 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </body>
+</html>

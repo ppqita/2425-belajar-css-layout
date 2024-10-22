@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grid Item: Start & End</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: [cline1] 100px [cline2] auto [cline3] 100px [cline4];
+                grid-template-rows: [rline1] 50px [rline2] auto [rline3] 100px [rline4];
+                gap: 5px;
+            }
+
+            .header {
+                background-color: aqua;
+                grid-column-start: cline1;
+                grid-column-end: cline4;
+                grid-row-start: rline1;
+                grid-row-end: rline1;
+            }
+
+            .content {
+                background-color: bisque;
+                grid-area: content;
+                grid-column-start: cline2;
+                grid-column-end: cline3;
+                grid-row-start: rline2;
+                grid-row-end: rline3;
+            }
+
+            .footer {
+                background-color: aquamarine;
+                grid-column-start: cline1;
+                grid-column-end: cline3;
+                grid-row-start: rline3;
+                grid-row-end: rline4;
+            }
+
+            .sidebar-left {
+                background-color: blue;
+                grid-column-start: cline1;
+                grid-column-end: cline2;
+                grid-row-start: rline2;
+                grid-row-end: rline3;
+            }
+
+            .sidebar-right {
+                background-color: red;
+                grid-column-start: cline3;
+                grid-column-end: cline4;
+                grid-row-start: rline2;
+                grid-row-end: rline3;
+            }
+
+            .article {
+                background-color: yellow;
+                grid-column-start: cline3;
+                grid-column-end: cline4;
+                grid-row-start: rline3;
+                grid-row-end: rline4;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">Selamat datang di website Mahir System</div>
+            <div class="sidebar-left">
+                <h2>Sidebar Left</h2>
+            </div>
+            <div class="sidebar-right">
+                <h2>Sidebar Right</h2>
+            </div>
+            <div class="content">
+                <h2>Programming Mudah & Menyenangkan</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dicta pariatur qui voluptatum eaque optio voluptatem quasi
+                    ipsum, assumenda harum, incidunt, aspernatur perferendis
+                    consectetur. Quidem illum quisquam amet animi unde
+                    molestias?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit ad repellat ullam ut corrupti cumque eos ratione!
+                    Nostrum neque ut aperiam ullam debitis consectetur quis
+                    porro, id aliquam in quia?
+                </p>
+            </div>
+            <div class="article"><h2>Article</h2></div>
+            <div class="footer">Develop with Santai by Mahir System</div>
+        </div>
+    </body>
+</html>

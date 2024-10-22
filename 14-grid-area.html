@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grid Area</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: 100px auto 100px;
+                grid-template-rows: 50px auto 40px;
+                grid-template-areas:
+                    "header header menu"
+                    ". content ."
+                    "footer footer footer";
+                gap: 5px;
+            }
+
+            .header {
+                background-color: antiquewhite;
+                grid-area: header;
+            }
+
+            .content {
+                background-color: aqua;
+                grid-area: content;
+            }
+
+            .footer {
+                background-color: bisque;
+                grid-area: footer;
+            }
+
+            .menu {
+                background-color: yellow;
+                grid-area: menu;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="menu">Menu</div>
+            <div class="header">Selamat datang.</div>
+            <div class="content">
+                Belajar pemrograman mudah dan menyenangkan.
+            </div>
+            <div class="footer">Develop by Fufufafa.</div>
+        </div>
+    </body>
+</html>
